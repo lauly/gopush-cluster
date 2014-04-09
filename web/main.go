@@ -55,7 +55,7 @@ func main() {
 	}
 	// if process exit, close log
 	defer Log.Close()
-	// Initialize zookeeper
+	// Initialize zookeeper   初始化 zookeeper
 	zk, err := InitZK()
 	if err != nil {
 		Log.Error("InitZK() failed(%v)", err)
